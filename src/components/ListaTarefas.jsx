@@ -2,7 +2,7 @@ import { CheckIcon, ChevronRightIcon, TrashIcon } from "lucide-react";
 import { useNavigate } from "react-router";
 import Button from "./Button.jsx";
 
-function Tarefas({tarefas, quandoClicaNaTarefa, deletarTarefa}) {
+function ListaTarefas({tarefas, quandoClicaNaTarefa, deletarTarefa}) {
     const navigate = useNavigate();
     
     function irParaTarefa(tarefas) {
@@ -42,4 +42,4 @@ function Tarefas({tarefas, quandoClicaNaTarefa, deletarTarefa}) {
     );
 }
 
-export default Tarefas;
+export default ListaTarefas;
