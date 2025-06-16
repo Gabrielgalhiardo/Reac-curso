@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import Tarefas from './components/tarefas.jsx';
+import Tarefas from "./components/tarefas.jsx";
 import AdicionarTarefa from './components/AdicionarTarefa.jsx'; 
 import {v4} from 'uuid';
 
@@ -76,10 +76,10 @@ useEffect(() => {
 
   return(
     
-   <div className="flex flex-col items-center bg-slate-500 p-6">
+   <div className="flex flex-col items-center bg-slate-500 p-6 h-screen">
     <div className="w-[500px] space-y-4">
       <h1 className="text-3xl text-slate-100 font-bold text-center">
-        Gerenciador de Tarefas
+        Gerenciador de Tarefas 
       </h1>
     <AdicionarTarefa adicionarTarefa ={adicionarTarefa}/>
     <Tarefas tarefas={tarefas} quandoClicaNaTarefa={quandoClicaNaTarefa} deletarTarefa={deletarTarefa}/>
